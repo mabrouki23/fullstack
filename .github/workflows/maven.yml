@@ -59,4 +59,4 @@ jobs:
     - uses: actions/download-artifact@v3
       with:
          name: backend-0.0.1-SNAPSHOT.jar
-         path: ./backend/target/
+         path: ./backend/target/backend-0.0.1-SNAPSHOT.jar

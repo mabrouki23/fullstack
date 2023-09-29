@@ -63,6 +63,7 @@ jobs:
       with: 
          name: github-actions-artifact
          path: staging
+         
     - name: Docker Build Tag Publish
   # You may pin to the exact commit or the version.
   # uses: bitovi/github-actions-docker-publish@def3cb9a3ef842b230bf575dc4f5e280ae6a6896
@@ -87,7 +88,7 @@ jobs:
     # Add a string of values to the end of the build command
     #  build_args: # optional
     # Specify the working directory that the docker build will be run in
-       working-directory: backend
+       working-directory: D:\a\fullstack\fullstack\backend\
               
     - name: Maven Cache    
       # You may pin to the exact commit or the version.

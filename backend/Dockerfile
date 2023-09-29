@@ -1,4 +1,5 @@
-FROM eclipse-temurin:17
-ADD  target/backend-0.0.1-SNAPSHOT.jar fullstackapp.jar
-ENTRYPOINT ["java","-jar","/fullstackapp.jar"]
-EXPOSE 80:80
+FROM openjdk:17
+ADD target/backend-0.0.1.jar backend-0.0.1.jar
+EXPOSE 8081
+ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -jar backend-0.0.1.jar"]
+

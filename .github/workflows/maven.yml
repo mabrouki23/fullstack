@@ -57,22 +57,31 @@ jobs:
       run: |
            mvn -B -DskipTests package --file pom.xml
            mkdir staging && cp D:\a\fullstack\fullstack\backend\target\*.jar staging
-    - name: Login to Docker Hub
-      uses: docker/login-action@v3
+    - name: Docker Build Tag Publish
+  # You may pin to the exact commit or the version.
+  # uses: bitovi/github-actions-docker-publish@def3cb9a3ef842b230bf575dc4f5e280ae6a6896
+      uses: bitovi/github-actions-docker-publish@v1.0.7
       with:
-       username: ${{ secrets.DOCKERHUB_USERNAME }}
-       password: ${{ secrets.DOCKERHUB_TOKEN }}
-    
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
-    - name: Build and push
-      uses: docker/build-push-action@v5
-      with:
-          context: .
-          file: ./Dockerfile
-          push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest  
-          platform: windows/amd64
+    # Checkout the repository
+    # checkout: # optional, default is true
+    # Tag to override default Logic
+    #image_tag: # optional, default is 
+    # Use the SHA for the tag.  Overrides the default logic.
+     #  use_sha: # optional, default is false
+    # Docker org name.
+    #org_name: # optional, default is 
+    # Name of the docker repository
+   # repo_name: # optional, default is 
+    # Tag default branch with latest tag instead of branch name.
+    #use_latest: # optional, default is true
+    # Docker user
+          docker_username: hocinemab
+    # Docker password
+          docker_password: AllAhoqkbqr1982/
+    # Add a string of values to the end of the build command
+    #  build_args: # optional
+    # Specify the working directory that the docker build will be run in
+   #  working-directory:
          
     - name: register workflow data as artifact
       uses: actions/upload-artifact@v2

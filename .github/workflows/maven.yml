@@ -68,7 +68,7 @@ jobs:
       uses: skjolber/maven-cache-github-action@v2.0
       with:
     # Build step step, i.e. restore or save
-         step: restore or save
+         step: restore
      
       
       

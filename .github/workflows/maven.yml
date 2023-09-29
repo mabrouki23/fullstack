@@ -77,7 +77,7 @@ jobs:
     # Docker user
           docker_username: hocinemab
     # Docker password
-          docker_password: AllAhoqkbqr1982/
+          docker_password: Allahoakbar1982/
     # Add a string of values to the end of the build command
     #  build_args: # optional
     # Specify the working directory that the docker build will be run in

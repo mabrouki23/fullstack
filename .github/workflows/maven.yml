@@ -81,7 +81,7 @@ jobs:
     # Add a string of values to the end of the build command
     #  build_args: # optional
     # Specify the working directory that the docker build will be run in
-   #  working-directory:
+       working-directory: ./
          
     - name: register workflow data as artifact
       uses: actions/upload-artifact@v2

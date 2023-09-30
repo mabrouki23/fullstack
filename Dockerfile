@@ -5,7 +5,7 @@ FROM eclipse-temurin:17
 WORKDIR /app
 
 # Copy the jar file into our app
-COPY target\springbootbackfrontend 0.0.1-SNAPSHOT   /app
+COPY target\springbootbackfrontend-0.0.1-SNAPSHOT.jar   /app
 
 # Exposing port 8080
 EXPOSE 8080

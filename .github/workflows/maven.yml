@@ -22,7 +22,6 @@ jobs:
        image: hocinemab/fullstackapp
        tags: v1, latest
        registry: docker.io
-       directory: ../../bakend
-       dockerfile: Dockerfile
+       directory: ../../bakend     
        username: ${{ secrets.DOCKERHUB_USERNAME }}
        password: ${{ secrets.DOCKERHUB_TOKEN }}

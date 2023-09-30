@@ -63,31 +63,21 @@ jobs:
       with: 
          name: github-actions-artifact
          path: staging
-         
-    - name: Docker Build Tag Publish
+
+    - name: Docker Action
   # You may pin to the exact commit or the version.
-     # uses: bitovi/github-actions-docker-publish@def3cb9a3ef842b230bf575dc4f5e280ae6a6896
-      uses: bitovi/github-actions-docker-publish@v1.0.7
+  # uses: zenato/docker-action@8309ea4d790d074676660449b9f2bcbcae25cdb9
+      uses: zenato/docker-action@v1.0.0
       with:
-    # Checkout the repository
-    # checkout: # optional, default is true
-    # Tag to override default Logic
-       image_tag: hocinemab/fullstackapp 
-    # Use the SHA for the tag.  Overrides the default logic.
-     #  use_sha: # optional, default is false
-    # Docker org name.
-    #org_name: # optional, default is 
-    # Name of the docker repository
-       repo_name: fullstackapp
-    # Tag default branch with latest tag instead of branch name.
-    #use_latest: # optional, default is true
-    # Docker user
-       docker_username: hocinemab
-    # Docker password
-       docker_password: Allahoakbar1982/
-    # Add a string of values to the end of the build command
-    #  build_args: # optional
-    # Specify the working directory that the docker build will be run in
-  
-    
-    
+    # Registry username
+        username: hocinemab
+    # Registry password
+        password: Allahoakbar1982/ 
+    # Repository on registry
+        repository: mabrouki23
+    # Registry hostname
+      # registry: # optional
+    # Image tag
+        tag: hocinemab/fullstackapp    
+         
+   

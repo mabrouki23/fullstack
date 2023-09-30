@@ -78,13 +78,13 @@ jobs:
     # Docker org name.
     #org_name: # optional, default is 
     # Name of the docker repository
-       repo_name: hocinemab/fullstackapp
+       repo_name: fullstackapp
     # Tag default branch with latest tag instead of branch name.
     #use_latest: # optional, default is true
     # Docker user
        docker_username: hocinemab
     # Docker password
-       docker_password: Allahoakbar1982/
+       docker_password: 123456
     # Add a string of values to the end of the build command
     #  build_args: # optional
     # Specify the working directory that the docker build will be run in

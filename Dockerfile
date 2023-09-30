@@ -1,4 +1,11 @@
 FROM eclipse-temurin:17
-ADD ./backend/target/fullstackapp.jar fullstackapp.jar
-ENTRYPOINT ["java","-jar","/fullstackapp.jar"]
-EXPOSE 80:80
+ 
+WORKDIR /app
+ 
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:go-offline
+ 
+COPY src ./src
+ 
+CMD ["./mvnw"]

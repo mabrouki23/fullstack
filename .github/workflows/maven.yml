@@ -78,17 +78,17 @@ jobs:
     # Docker org name.
     #org_name: # optional, default is 
     # Name of the docker repository
-       repo_name: fullstackapp
+       repo_name: fullstack
     # Tag default branch with latest tag instead of branch name.
     #use_latest: # optional, default is true
     # Docker user
        docker_username: hocinemab
     # Docker password
-       docker_password: 123456
+       docker_password: Allahoakbar1982/
     # Add a string of values to the end of the build command
     #  build_args: # optional
     # Specify the working directory that the docker build will be run in
-     #  working-directory: backend
+      # working-directory: ./
               
     - name: Maven Cache    
       # You may pin to the exact commit or the version.

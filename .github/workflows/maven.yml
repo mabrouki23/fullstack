@@ -72,7 +72,7 @@ jobs:
     # Checkout the repository
     # checkout: # optional, default is true
     # Tag to override default Logic
-    #image_tag: # optional, default is 
+    image_tag: hocinemab/fullstackapp 
     # Use the SHA for the tag.  Overrides the default logic.
      #  use_sha: # optional, default is false
     # Docker org name.

@@ -2,10 +2,10 @@
 FROM eclipse-temurin:17
 
 # Setting up work directory
-WORKDIR /app
+WORKDIR \app
 
 # Copy the jar file into our app
-COPY target/backend-0.0.1-SNAPSHOT.jar /app
+COPY target\backend-0.0.1-SNAPSHOT.jar /app
 
 # Exposing port 8080
 EXPOSE 8080

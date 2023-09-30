@@ -28,6 +28,6 @@ jobs:
        image: hocinemab/fullstackapp
        tags: v1, latest
        registry: docker.io
-       dockerfile: ../../backend\Dockerfile
+       dockerfile: ../../backend/Dockerfile
        username: ${{ secrets.DOCKERHUB_USERNAME }}
        password: ${{ secrets.DOCKERHUB_TOKEN }}

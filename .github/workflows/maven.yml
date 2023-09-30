@@ -66,7 +66,7 @@ jobs:
          
     - name: Docker Build Tag Publish
   # You may pin to the exact commit or the version.
-  # uses: bitovi/github-actions-docker-publish@def3cb9a3ef842b230bf575dc4f5e280ae6a6896
+     # uses: bitovi/github-actions-docker-publish@def3cb9a3ef842b230bf575dc4f5e280ae6a6896
       uses: bitovi/github-actions-docker-publish@v1.0.7
       with:
     # Checkout the repository

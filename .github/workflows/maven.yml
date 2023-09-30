@@ -7,20 +7,15 @@
 # documentation.
 
 name: Java CI with Maven
-
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    steps:
-    
+    steps:   
 
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
@@ -29,6 +24,6 @@ jobs:
        tags: v1, latest
        registry: docker.io
       
-       dockerfile: .
+       dockerfile: Dockerfile
        username: ${{ secrets.DOCKERHUB_USERNAME }}
        password: ${{ secrets.DOCKERHUB_TOKEN }}

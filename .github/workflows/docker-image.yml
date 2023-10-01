@@ -2,7 +2,7 @@ name: Reusable deploy workflow
 on: 
     push:
      branches:
-     - master
+      - main
     workflow_call:
      inputs:
       build_id:

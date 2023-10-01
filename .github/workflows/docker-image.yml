@@ -1,7 +1,8 @@
 name: Reusable deploy workflow
-on:
-  workflow_call:
-    inputs:
+on: 
+    push:
+    workflow_call:
+     inputs:
       build_id:
         required: true
         type: number

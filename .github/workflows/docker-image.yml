@@ -1,24 +1,22 @@
-name: Reusable deploy workflow
-on: 
-    push:
-     branches:
-      - main
-    workflow_call:
-     inputs:
-      build_id:
-        required: true
-        type: number
-      deploy_target:
-        required: true
-        type: string
-      perform_deploy:
-        required: true
-        type: boolean
-
+name: Publish GitHub Actions Artifacts Example
+on:
+  push:
+    branches: [ main ]
 jobs:
-  deploy:
+  github-actions-environment-variables-ubuntu:
     runs-on: ubuntu-latest
-    if: ${{ inputs.perform_deploy }}
     steps:
-      - name: Deploy build to target
-        run:  deploy --build ${ --target ${{ inputs.deploy_target }}
+      - name: List of the GitHub Actions environment variables on Windows
+        run: env
+
+  github-actions-environment-variables-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Ubuntu GitHub Actions environment variables List
+        run: env
+
+  github-actions-environment-variables-macos:
+    runs-on: macos-latest
+    steps:
+      - name: MacOs List of GitHub Actions environment variables
+        run: env

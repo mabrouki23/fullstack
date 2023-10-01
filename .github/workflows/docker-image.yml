@@ -65,7 +65,7 @@ jobs:
          path: staging
   push:         
    runs-on: ubuntu-latest
-
+   needs: build
    steps:    
 
     - uses: mr-smithers-excellent/docker-build-push@v6

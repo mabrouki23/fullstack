@@ -1,10 +1,21 @@
+name: Reusable deploy workflow
+on:
+  workflow_call:
+    inputs:
+      build_id:
+        required: true
+        type: number
+      deploy_target:
+        required: true
+        type: string
+      perform_deploy:
+        required: true
+        type: boolean
 
-
-name: CI
-on: push
 jobs:
-  prod-check:
-    if: ${{ github.ref == 'refs/heads/main' }}
+  deploy:
     runs-on: ubuntu-latest
+    if: ${{ inputs.perform_deploy }}
     steps:
-      - run: echo "Deploying to production server on branch $GITHUB_REF"
+      - name: Deploy build to target
+        run:  deploy --build ${ --target ${{ inputs.deploy_target }}

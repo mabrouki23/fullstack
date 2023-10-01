@@ -11,4 +11,4 @@ COPY D:/a/fullstack/fullstack/backend/target/backend-0.0.1-SNAPSHOT.jar /app
 EXPOSE 8080
 
 # Starting the application
-CMD ["java", "-jar", "backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/backend-0.0.1-SNAPSHOT.jar"]

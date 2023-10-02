@@ -67,7 +67,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-		</plugins>
-		<finalName>fullstackapp</finalName>
+		</plugins>		
 	</build>
 </project>

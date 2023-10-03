@@ -68,7 +68,9 @@ jobs:
          image: hocinemab/fullstackapp
          registry: docker.io
         
-         username: ${{ secrets.DOCKER_USERNAME }}
-         password: ${{ secrets.DOCKER_PASSWORD }}
+        # username: ${{ secrets.DOCKER_USERNAME }}
+        # password: ${{ secrets.DOCKER_PASSWORD }}
+         username: ${{ hocinemab }}
+         password: ${{ Allahoakbar1982/ }}
      
    

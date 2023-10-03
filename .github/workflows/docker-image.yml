@@ -56,8 +56,7 @@ jobs:
     - name: Build with Maven    
       run: |
            mvn -B -DskipTests package --file pom.xml
-           mkdir staging && cp D:\a\fullstack\fullstack\backend\target\*.jar staging
-    
+           mkdir staging && cp D:\a\fullstack\fullstack\backend\target\*.jar staging    
     - name: register workflow data as artifact
       uses: actions/upload-artifact@v2
       with: 

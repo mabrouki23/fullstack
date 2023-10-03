@@ -67,7 +67,8 @@ jobs:
       with:
          image: hocinemab/springbootng
          registry: docker.io
-         username: ${{ hocinemab }}
-         password: ${{ Allahoakbar1982/ }}
+        
+         username: ${{ secrets.DOCKERHUB_USERNAME }}
+         password: ${{ secrets.DOCKERHUB_PASSWORD }}
      
    
